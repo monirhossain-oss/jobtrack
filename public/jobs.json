@@ -1,0 +1,335 @@
+[
+  {
+    "id": "1",
+    "name": "TechNova Solutions",
+    "logo": "https://i.ibb.co/LXL1BCFV/creative-reels-composition.jpg",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://technova.com",
+    "industry": "Software Development",
+    "jobs": [
+      {
+        "id": "job-001",
+        "title": "Frontend Developer",
+        "bannerImage": "https://i.ibb.co/LXL1BCFV/creative-reels-composition.jpg",
+        "location": "Remote",
+        "salary": "30k-50k",
+        "jobType": "Full-time",
+        "description": "Build user-friendly web interfaces using React.js.",
+        "requirements": [
+          "HTML, CSS, JS",
+          "React.js",
+          "REST API",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "id": "job-002",
+        "title": "Backend Developer",
+        "bannerImage": "https://i.ibb.co/LXL1BCFV/creative-reels-composition.jpg",
+        "location": "On-site",
+        "salary": "40k-60k",
+        "jobType": "Full-time",
+        "description": "Develop scalable backend using Node.js.",
+        "requirements": [
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "JWT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "CreativeBits Agency",
+    "logo": "https://i.ibb.co/VWWd4Nfy/finger-pressing-social-network-button-touch-screen.jpg",
+    "location": "Chittagong, Bangladesh",
+    "website": "https://creativebits.com",
+    "industry": "Marketing & Design",
+    "jobs": [
+      {
+        "id": "job-003",
+        "title": "Graphic Designer",
+        "bannerImage": "https://i.ibb.co/Tcg6q3m/design.jpg",
+        "location": "Remote",
+        "salary": "25k-35k",
+        "jobType": "Part-time",
+        "description": "Design creative visuals for marketing campaigns.",
+        "requirements": [
+          "Photoshop",
+          "Illustrator",
+          "Canva",
+          "Figma"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "DataStream Corp",
+    "logo": "https://i.ibb.co/4R1ttYJW/hand-touching-with-search-icon-search-engine-optimisation-seo-concept-find-information-by-internet-c.jpg",
+    "location": "Sylhet, Bangladesh",
+    "website": "https://datastream.com",
+    "industry": "Data Analytics",
+    "jobs": [
+      {
+        "id": "job-004",
+        "title": "Data Analyst",
+        "bannerImage": "https://i.ibb.co/h1Mxq4c/data.jpg",
+        "location": "On-site",
+        "salary": "35k-45k",
+        "jobType": "Full-time",
+        "description": "Analyze business data and create visual reports.",
+        "requirements": [
+          "SQL",
+          "Excel",
+          "Power BI",
+          "Python"
+        ]
+      },
+      {
+        "id": "job-005",
+        "title": "Data Engineer",
+        "bannerImage": "https://i.ibb.co/qrsGY5J/dataeng.jpg",
+        "location": "Remote",
+        "salary": "60k-80k",
+        "jobType": "Full-time",
+        "description": "Manage and optimize data pipelines.",
+        "requirements": [
+          "Python",
+          "Spark",
+          "Kafka",
+          "ETL Tools"
+        ]
+      },
+      {
+        "id": "job-006",
+        "title": "ML Engineer",
+        "bannerImage": "https://i.ibb.co/ZXB0W13/ml.jpg",
+        "location": "Remote",
+        "salary": "70k-90k",
+        "jobType": "Full-time",
+        "description": "Develop and train machine learning models.",
+        "requirements": [
+          "Python",
+          "scikit-learn",
+          "TensorFlow",
+          "Deep Learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "GreenTech Ltd",
+    "logo": "https://i.ibb.co/MDrDwwVh/hand-with-tattoo-holding-hashtag-icon.jpg",
+    "location": "Rajshahi, Bangladesh",
+    "website": "https://greentech.com",
+    "industry": "Environment & Energy",
+    "jobs": [
+      {
+        "id": "job-007",
+        "title": "Environmental Engineer",
+        "bannerImage": "https://i.ibb.co/BsdzXHn/environment.jpg",
+        "location": "On-site",
+        "salary": "45k-60k",
+        "jobType": "Full-time",
+        "description": "Work on sustainable energy projects.",
+        "requirements": [
+          "Environmental Science",
+          "Project Planning",
+          "Field Work"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "EduSpark Learning",
+    "logo": "https://i.ibb.co/6cZThxXw/electronic-gadgets-with-notepad-twitter-icon.jpg",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://eduspark.com",
+    "industry": "Education Technology",
+    "jobs": [
+      {
+        "id": "job-008",
+        "title": "Course Content Creator",
+        "bannerImage": "https://i.ibb.co/NW3jZgt/education.jpg",
+        "location": "Remote",
+        "salary": "20k-30k",
+        "jobType": "Part-time",
+        "description": "Create quality educational content.",
+        "requirements": [
+          "Writing Skills",
+          "Video Editing",
+          "Script Writing"
+        ]
+      },
+      {
+        "id": "job-009",
+        "title": "Online Tutor",
+        "bannerImage": "https://i.ibb.co/3hRjztg/teacher.jpg",
+        "location": "Remote",
+        "salary": "15k-25k",
+        "jobType": "Part-time",
+        "description": "Teach students online on various subjects.",
+        "requirements": [
+          "Subject Knowledge",
+          "Communication",
+          "Zoom/Meet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "HealthBridge",
+    "logo": "https://i.ibb.co/fGkgyWsV/pile-3d-instagram-logos.jpg",
+    "location": "Khulna, Bangladesh",
+    "website": "https://healthbridge.com",
+    "industry": "Healthcare",
+    "jobs": [
+      {
+        "id": "job-010",
+        "title": "Medical Assistant",
+        "bannerImage": "https://i.ibb.co/3rgFSyZ/medical.jpg",
+        "location": "On-site",
+        "salary": "25k-35k",
+        "jobType": "Full-time",
+        "description": "Assist doctors with medical procedures.",
+        "requirements": [
+          "Diploma in Health",
+          "Basic Computer",
+          "Patient Care"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "AgroBase Ltd",
+    "logo": "https://i.ibb.co/LXL1BCFV/creative-reels-composition.jpg",
+    "location": "Barisal, Bangladesh",
+    "website": "https://agrobase.com",
+    "industry": "Agriculture",
+    "jobs": [
+      {
+        "id": "job-011",
+        "title": "Agricultural Engineer",
+        "bannerImage": "https://i.ibb.co/Hdt6fMZ/agri.jpg",
+        "location": "On-site",
+        "salary": "30k-45k",
+        "jobType": "Full-time",
+        "description": "Work on modern farming solutions.",
+        "requirements": [
+          "Agri Engineering",
+          "Soil Analysis",
+          "Farm Tech"
+        ]
+      },
+      {
+        "id": "job-012",
+        "title": "Farm Supervisor",
+        "bannerImage": "https://i.ibb.co/T8mLS8Z/farm.jpg",
+        "location": "On-site",
+        "salary": "20k-30k",
+        "jobType": "Full-time",
+        "description": "Manage farm operations and team.",
+        "requirements": [
+          "Leadership",
+          "Record Keeping",
+          "Crop Management"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "FinTech Pro",
+    "logo": "https://i.ibb.co/5hVBLzgW/ramadan-carts-front-side.jpg",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://fintechpro.com",
+    "industry": "Financial Technology",
+    "jobs": [
+      {
+        "id": "job-013",
+        "title": "UI/UX Designer",
+        "bannerImage": "https://i.ibb.co/hRCkmq8/uiux.jpg",
+        "location": "Remote",
+        "salary": "50k-70k",
+        "jobType": "Full-time",
+        "description": "Design seamless user interfaces.",
+        "requirements": [
+          "Figma",
+          "Prototyping",
+          "User Testing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "SkyNet Robotics",
+    "logo": "https://i.ibb.co/hFKbB2q7/happy-women-from-ordering-products-from-customers-business-owners-who-work-home-white-backg.jpg",
+    "location": "Gazipur, Bangladesh",
+    "website": "https://skynetbd.com",
+    "industry": "Robotics",
+    "jobs": [
+      {
+        "id": "job-014",
+        "title": "Robotics Engineer",
+        "bannerImage": "https://i.ibb.co/9NHGDJX/robot.jpg",
+        "location": "On-site",
+        "salary": "60k-80k",
+        "jobType": "Full-time",
+        "description": "Develop robotic systems for automation.",
+        "requirements": [
+          "Python",
+          "Microcontrollers",
+          "ROS",
+          "C++"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Cloudify Soft",
+    "logo": "https://i.ibb.co/Nns4TVGC/view-mystery-cardboard-box-with-gleaming-light-coming-from-inside.jpg",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://cloudify.com",
+    "industry": "Cloud Computing",
+    "jobs": [
+      {
+        "id": "job-015",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://i.ibb.co/vZWFkxm/devops.jpg",
+        "location": "Remote",
+        "salary": "70k-90k",
+        "jobType": "Full-time",
+        "description": "Implement CI/CD pipelines and manage cloud infrastructure.",
+        "requirements": [
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "CI/CD"
+        ]
+      },
+      {
+        "id": "job-016",
+        "title": "Cloud Architect",
+        "bannerImage": "https://i.ibb.co/41pvGZd/cloud.jpg",
+        "location": "Remote",
+        "salary": "90k-120k",
+        "jobType": "Full-time",
+        "description": "Design scalable cloud systems.",
+        "requirements": [
+          "Cloud Design",
+          "Security",
+          "Load Balancing",
+          "Serverless"
+        ]
+      }
+    ]
+  }
+]

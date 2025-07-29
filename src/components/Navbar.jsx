@@ -1,80 +1,104 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import "./Navbar.css"
+import { FaArrowRight } from "react-icons/fa";
+import { AuthContext } from "../ContextProviders/ContextProviders";
+import { CiLogin } from "react-icons/ci";
 
 const Navbar = () => {
+    const {logoutUser, user} = useContext(AuthContext);
+    const [isOpen, setIsOpen] = useState(false);
+    // console.log(user)  
+    const navLinks = [
+        {
+            title: "Home",
+            path: "/",
+        },
+        {
+            title: "Companies",
+            path: "/companies",
+        },
+        {
+          title: "About",
+          path: "/about"
+        }
+    ]
+    const handleLogout = () =>{
+        logoutUser();
+    }
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {" "}
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+    <nav className="bg-slate-300 shadow-md px-4 py-3">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="flex items-center">
+          <Link to={"/"} className="text-3xl font-bold text-gray-800">JobTrack</Link>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="hidden md:flex items-center space-x-2">
+          {
+            navLinks.map((link) => 
+                <NavLink key={link.path} className=" hover:bg-blue-300 text-black px-[15px] py-[5px] rounded-md" to={link.path}>{link.title}</NavLink>
+            )
+          }
+          {
+            user 
+            ? 
+            <div className="flex items-center gap-7">
+                <Link to={"/profile"}>
+                    <img src={user?.photoURL} alt="Profile" className="h-9 w-9 cursor-pointer rounded-full border-2 border-blue-400"/>
+                </Link> 
+                <button onClick={handleLogout} className="flex  items-center gap-2  px-3 py-1  rounded-md cursor-pointer bg-blue-400 btn-sm text-white text-[15px] group font-semibold hover:scale-[101%] transition-all duration-300">
+                    Logout
+                    <CiLogin></CiLogin>
+                </button>
+            </div>
+          : <Link to={'/login'}>
+            <button className="flex  items-center gap-2  px-3 py-1  rounded-md cursor-pointer bg-blue-400 btn-sm text-white text-[15px] group font-semibold">
+                Login
+                <FaArrowRight className="group-hover:translate-x-2 transition-all duration-300"></FaArrowRight>
+            </button>
+             </Link>
+          }
+        </div>
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-gray-700 focus:outline-none"
+          >
+            <HiOutlineMenuAlt1 size={20}/>
+          </button>
+        </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-          <h1>code push</h1>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div>
-    </div>
+
+      {/* responsive */}
+      {isOpen && (
+        <div className="md:hidden flex flex-col px-4 pt-2 pb-4 space-y-2">
+          {
+            navLinks.map((link) => 
+                <NavLink key={link.path} className="hover:bg-gray-300 px-[15px] py-[5px] rounded-xl" to={link.path}>{link.title}</NavLink>
+            )
+          }
+          {
+            user 
+            ? 
+            <div className="flex items-center gap-2">
+                <Link to={"/profile"}>
+                    <img src={user?.photoURL} alt="Profile" className="h-9 w-9 cursor-pointer rounded-full border-2 border-blue-400"/>
+                </Link> 
+                <button onClick={handleLogout} className="flex  items-center gap-2  px-3 py-1  rounded-md cursor-pointer bg-blue-400 btn-sm text-white text-[15px] group font-semibold hover:scale-[101%] transition-all duration-300">
+                    Logout
+                    <CiLogin></CiLogin>
+                </button>
+            </div>
+          : <Link to={'/login'}>
+            <button className="flex  items-center gap-2  px-3 py-1  rounded-md cursor-pointer bg-blue-400 btn-sm text-white text-[15px] group font-semibold">
+                Login
+                <FaArrowRight className="group-hover:translate-x-2 transition-all duration-300"></FaArrowRight>
+            </button>
+             </Link>
+          }
+        </div>
+      )}
+    </nav>
   );
 };
 
